@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    width: 1200px;
+    border: 1px dashed black;
+}
+aside{
+    font-family: 'Roboto Condensed', sans-serif;
+    height: 570px;
+    width: 400px;
+    padding: 30px;
+    /* border: 1px solid black; */
+    float: left;
+    font-weight: 800;
+}
+
+article{
+    height: 570px;
+    width: 640px;
+    padding: 30px;
+    /* border: 1px solid yellowgreen; */
+    float: right;
+}
+
+#form_title{
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 3%;
+    background-color: gainsboro;
+
+}
+
+#form_content{
+    padding: 10px;
+    resize: none;
+    height: 150px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: gainsboro;
+}
+
+button{
+    width: 90px;
+    height: 50px;
+    background-color: rgb(100, 128, 40);
+    border: none;
+    border-radius: 9%;
+    font-weight: 800;
+    outline: none;
+    box-shadow: 0px 9px rgb(70, 98, 10);
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.7;
+}
+button:active{
+    opacity: 1;
+    background-color: rgb(90, 118, 30);
+    box-shadow: 0px 5px rgb(60, 88, 0);
+}
+
+#postTitle{
+    font-size: 19px;
+}
