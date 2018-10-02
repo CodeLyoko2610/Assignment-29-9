@@ -49,7 +49,7 @@ $("div#output_title").html($("div#form_title").html());
 //NO!!!! NOT WORKING, WHY!!
 //Function: Click button to submit the info
 $("button").click(function(){
-    $("div#output_title").html($("div#form_title").html());
+    $("div#output_title").html(takeTitle());
 });
 
 // $("button").click(function(){

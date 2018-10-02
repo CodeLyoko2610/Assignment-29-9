@@ -1,0 +1,3 @@
+Assign 1: Blog -> Submit
+Assign 2: 1 Click -> Change 1st-text color, 2 Click -> Next text-color...
+Assign 3: add Class when clicked (Maybe navi)
