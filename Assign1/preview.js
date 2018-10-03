@@ -4,6 +4,8 @@ $("button").click(function(){
     console.log("This JS file work!");
 })};
 
+checkJS();
+
 //--------------------------JS way----------------------------
 // //Function: Takes inputted Title from user
 // function takeTitle() {
@@ -24,35 +26,18 @@ $("button").click(function(){
 // });
 
 //-----------------------------JQuery way----------------------
-// //Function: take inputted title
-//     $(document).ready(function takeTitle(){
-//     $("div#output_title").html("This should replace the empty space");
-// });
-
 //Function: Change the default title
-// function changeTitle() {
-//     $("div#output_title").html("This should replace the empty space");
-// };
-// changeTitle();
+function changeTitle() {
+    $("div#output_title").html($("input#form_title").val());
+};  
 
-// //Function: Change the default content
-// function changeContent() {
-//     $("div#output_content").html("This should replace the empty space");
-// };
-// changeContent();
-
-//Function: Take inputted title from the form
-function takeTitle() {    
-$("div#output_title").html($("div#form_title").html());
+//Function: Change the default content
+function changeContent() {
+    $("div#output_content").html($("textarea#form_content").val()); //The location must be absolutely right ! textarea used, not a div -> so indicate the textarea, not a div !
 };
 
-//NO!!!! NOT WORKING, WHY!!
-//Function: Click button to submit the info
+//Function: Only change when the button is hitted
 $("button").click(function(){
-    $("div#output_title").html(takeTitle());
+    changeTitle();
+    changeContent();
 });
-
-// $("button").click(function(){
-// $("#output_title").html(takeTitle());
-// });
-
